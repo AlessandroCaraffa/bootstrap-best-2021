@@ -12,9 +12,9 @@
 		
 			<nav class="navbar navbar-dark bg-dark">
 				<div class="container-fluid justify-content-start w-75">
-					<a class=" navbar-brand " th:href="@{'/'}">Best of 2021</a>
-					<a class="btn btn-secondary  me-2 " th:href="@{/movies}">Movies</a>
-					<a class="btn btn-secondary  " th:href="@{/songs}">Songs</a>
+					<a class=" navbar-brand " th:classappend="${author} ? active : nulla " th:href="@{'/'}">Best of 2021</a>
+					<a class="btn btn-secondary  me-2 " th:classappend="${title == 'Movies'} ? active : nulla  "th:href="@{/movies}">Movies</a>
+					<a class="btn btn-secondary  "  th:classappend="${title == 'Songs'} ? active : nulla "th:href="@{/songs}">Songs</a>
 				</div>
 			</nav>
 		
