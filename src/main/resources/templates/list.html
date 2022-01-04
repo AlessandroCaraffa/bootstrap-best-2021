@@ -4,6 +4,9 @@
 		<div th:replace="fragments :: head"></div>
 		<title th:text="${title}"></title>
 	</head>
+	<header>
+		<div th:replace="fragments :: nav"></div>
+	</header>
 	<body>
 		<h1>Best of 2021</h1>
 		<h2 th:text="${title}"></h2>
